@@ -4,7 +4,7 @@
 
 - type: vessel
   id: Borough
-  name: ISS Borough # Idyll Star Ships! :)
+  name: IS Borough # Idyll Starships! :)
   description: A small shuttle to provide food and drink to off-station work crews.
   price: 25000 # ~5% markup from 23724
   category: Small
@@ -13,7 +13,7 @@
 
 - type: gameMap
   id: Borough
-  mapName: 'ISS Borough'
+  mapName: 'IS Borough'
   mapPath: /Maps/_Lagrange/Shuttles/borough.yml
   minPlayers: 0
   stations:
@@ -21,10 +21,9 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Borough {1}'
+          mapNameTemplate: 'IS Borough HS-{0}' # Hospitality Ship
           nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            !type:LagrangeNameGenerator
         - type: StationJobs
           overflowJobs: []
           availableJobs:
