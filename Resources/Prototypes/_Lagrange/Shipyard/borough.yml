@@ -1,0 +1,30 @@
+# Author Info
+# Skunks& (https://github.com/makyo)
+# Fireheart& (https://github.com/samsterious)
+
+- type: vessel
+  id: Borough
+  name: IS Borough # Idyll Starships! :)
+  description: A small shuttle to provide food and drink to off-station work crews.
+  price: 25000 # ~5% markup from 23724
+  category: Small
+  group: Civilian
+  shuttlePath: /Maps/_Lagrange/Shuttles/borough.yml
+
+- type: gameMap
+  id: Borough
+  mapName: 'IS Borough'
+  mapPath: /Maps/_Lagrange/Shuttles/borough.yml
+  minPlayers: 0
+  stations:
+    Borough:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'IS Borough HS-{0}' # Hospitality Ship
+          nameGenerator:
+            !type:LagrangeNameGenerator
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            Passenger: [ 0, 0 ]
