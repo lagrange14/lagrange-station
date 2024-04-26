@@ -180,7 +180,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
                 newAccess.Add($"Brig");
             }
 
-            _accessSystem.TrySetTags(targetId, newAccess, newCap);
+            // Lagrange
+            // _accessSystem.TrySetTags(targetId, newAccess, newCap);
         }
 
         var deedID = EnsureComp<ShuttleDeedComponent>(targetId);
