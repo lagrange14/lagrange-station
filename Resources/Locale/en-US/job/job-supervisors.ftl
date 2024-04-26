@@ -1,7 +1,7 @@
 job-supervisors-centcom = CentCom official
 job-supervisors-captain = the captain
-job-supervisors-hop = the station representative
-job-supervisors-hos = the sheriff
+job-supervisors-hop = the head of personnel
+job-supervisors-hos = the head of security
 job-supervisors-ce = the chief engineer
 job-supervisors-cmo = the chief medical officer
 job-supervisors-rd = the research director
