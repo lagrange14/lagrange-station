@@ -596,13 +596,6 @@ namespace Content.Shared.Preferences
             return profile;
         }
 
-        public ICharacterProfile Validated(IConfigurationManager configManager, IPrototypeManager prototypeManager)
-        {
-            var profile = new HumanoidCharacterProfile(this);
-            profile.EnsureValid(configManager, prototypeManager);
-            return profile;
-        }
-
         // sorry this is kind of weird and duplicated,
         /// working inside these non entity systems is a bit wack
         public static string GetName(string species, Gender gender)
