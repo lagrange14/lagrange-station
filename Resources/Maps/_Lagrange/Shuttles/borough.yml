@@ -76,21 +76,19 @@ entities:
       data:
         tiles:
           0,0:
-            0: 15
-            1: 4080
+            0: 3823
+            1: 272
           0,-2:
             0: 65535
           0,-1:
             0: 65535
           1,0:
-            0: 15
-            1: 4080
+            0: 1919
+            1: 2176
           0,-3:
-            0: 65520
-            1: 15
+            0: 65535
           1,-3:
-            0: 65520
-            1: 15
+            0: 65535
           1,-2:
             0: 65535
           1,-1:
@@ -98,25 +96,33 @@ entities:
           2,0:
             1: 1
           0,-4:
-            1: 61440
+            0: 61440
           1,-4:
-            1: 61440
+            0: 12288
+            1: 49152
           2,-4:
             1: 12288
           2,-3:
-            1: 4915
+            0: 4371
+            1: 544
           2,-2:
-            1: 13107
+            0: 4369
+            1: 8738
           2,-1:
-            1: 4371
+            0: 273
+            1: 4098
           -1,-4:
-            1: 49152
+            1: 16384
+            0: 32768
           -1,-3:
-            1: 36044
+            0: 34956
+            1: 1088
           -1,-2:
-            1: 52428
+            1: 17476
+            0: 34952
           -1,-1:
-            1: 34956
+            1: 32772
+            0: 2184
           -1,0:
             1: 8
         uniqueMixes:
@@ -229,14 +235,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-10.5
       parent: 1
-- proto: PoweredlightLED
-  entities:
-  - uid: 10
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 3.5,-4.5
-      parent: 1
 - proto: APCBasic
   entities:
   - uid: 11
@@ -255,6 +253,143 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-12.5
+      parent: 1
+- proto: AtmosFixBlockerMarker
+  entities:
+  - uid: 295
+    components:
+    - type: Transform
+      pos: -1.5,-12.5
+      parent: 1
+  - uid: 296
+    components:
+    - type: Transform
+      pos: -1.5,-10.5
+      parent: 1
+  - uid: 297
+    components:
+    - type: Transform
+      pos: -1.5,-9.5
+      parent: 1
+  - uid: 298
+    components:
+    - type: Transform
+      pos: -1.5,-7.5
+      parent: 1
+  - uid: 299
+    components:
+    - type: Transform
+      pos: -1.5,-6.5
+      parent: 1
+  - uid: 300
+    components:
+    - type: Transform
+      pos: -1.5,-5.5
+      parent: 1
+  - uid: 301
+    components:
+    - type: Transform
+      pos: -1.5,-4.5
+      parent: 1
+  - uid: 302
+    components:
+    - type: Transform
+      pos: -1.5,-3.5
+      parent: 1
+  - uid: 303
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 1
+  - uid: 304
+    components:
+    - type: Transform
+      pos: -0.5,0.5
+      parent: 1
+  - uid: 305
+    components:
+    - type: Transform
+      pos: 0.5,1.5
+      parent: 1
+  - uid: 306
+    components:
+    - type: Transform
+      pos: 0.5,2.5
+      parent: 1
+  - uid: 307
+    components:
+    - type: Transform
+      pos: 7.5,2.5
+      parent: 1
+  - uid: 308
+    components:
+    - type: Transform
+      pos: 7.5,1.5
+      parent: 1
+  - uid: 309
+    components:
+    - type: Transform
+      pos: 8.5,0.5
+      parent: 1
+  - uid: 310
+    components:
+    - type: Transform
+      pos: 8.5,-0.5
+      parent: 1
+  - uid: 311
+    components:
+    - type: Transform
+      pos: 9.5,-3.5
+      parent: 1
+  - uid: 312
+    components:
+    - type: Transform
+      pos: 9.5,-4.5
+      parent: 1
+  - uid: 313
+    components:
+    - type: Transform
+      pos: 9.5,-5.5
+      parent: 1
+  - uid: 314
+    components:
+    - type: Transform
+      pos: 9.5,-6.5
+      parent: 1
+  - uid: 315
+    components:
+    - type: Transform
+      pos: 9.5,-7.5
+      parent: 1
+  - uid: 316
+    components:
+    - type: Transform
+      pos: 9.5,-9.5
+      parent: 1
+  - uid: 317
+    components:
+    - type: Transform
+      pos: 9.5,-10.5
+      parent: 1
+  - uid: 318
+    components:
+    - type: Transform
+      pos: 9.5,-12.5
+      parent: 1
+  - uid: 319
+    components:
+    - type: Transform
+      pos: 8.5,-12.5
+      parent: 1
+  - uid: 320
+    components:
+    - type: Transform
+      pos: 7.5,-12.5
+      parent: 1
+  - uid: 321
+    components:
+    - type: Transform
+      pos: 6.5,-12.5
       parent: 1
 - proto: BoozeDispenser
   entities:
@@ -1348,6 +1483,14 @@ entities:
       on: False
     - type: Physics
       bodyType: Static
+- proto: PoweredlightLED
+  entities:
+  - uid: 10
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-4.5
+      parent: 1
 - proto: PoweredlightSodium
   entities:
   - uid: 173
@@ -2084,7 +2227,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -150.8328
+      secondsUntilStateChange: -362.30194
       state: Opening
   - uid: 291
     components:
