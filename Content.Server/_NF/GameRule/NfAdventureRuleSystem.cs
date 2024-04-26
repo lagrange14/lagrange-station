@@ -110,6 +110,8 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
     private void OnStartup(RoundStartingEvent ev)
     {
+
+        /* Lagrange
         var depotMap = "/Maps/_NF/POI/cargodepot.yml";
         var tinnia = "/Maps/_NF/POI/tinnia.yml";
         var caseys = "/Maps/_NF/POI/caseyscasino.yml";
@@ -314,6 +316,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             //because they are all offset. confirmed good size grid, just need to fix all the offsets.
             _dunGen.GenerateDungeon(dunGen, grids[0], mapGrid, (Vector2i) offset, seed);
         }
+        */
     }
 
     private async Task ReportRound(String message,  int color = 0x77DDE7)
