@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Lagrange Station — makyo (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "polluxsign1"
+    },
+    {
+      "name": "polluxsign2"
+    },
+    {
+      "name": "polluxsign3"
+    },
+    {
+      "name": "polluxsign4"
+    }
+  ]
+}
