@@ -30,7 +30,7 @@
       - Chemistry
       - ChiefEngineer
       - ChiefMedicalOfficer
-      - Frontier # Frontier
+      #- Frontier # Frontier
       - Command
       - Engineering
       - External
@@ -43,7 +43,7 @@
       - Mail # Frontier
       - Maintenance
       - Medical
-      - Mercenary # Frontier
+      #- Mercenary # Frontier
       - Pilot # Frontier
       - Quartermaster
       - Research

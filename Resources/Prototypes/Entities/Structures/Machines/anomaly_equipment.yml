@@ -266,11 +266,11 @@
   - type: MaterialStorage
     whitelist:
       tags:
-#        - Sheet # Frontier
-        - RawMaterial # Frontier
+        - Sheet
+#       - RawMaterial # Frontier
     materialWhiteList:
-#    - Plasma # Frontier
-    - Bananium # Frontier
+      - Plasma
+#     - Bananium # Frontier
   - type: Fixtures
     fixtures:
       fix1:
@@ -322,8 +322,8 @@
   - type: WiresVisuals
   - type: StaticPrice
     price: 5000
-#  - type: AccessReader # Frontier
-#    access: [["Research"]] # Frontier
+  - type: AccessReader
+    access: [["Research"]]
   - type: GuideHelp
     guides:
     - AnomalousResearch

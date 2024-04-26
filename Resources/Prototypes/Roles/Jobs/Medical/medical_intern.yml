@@ -15,7 +15,7 @@
   access:
   - Medical
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: MedicalInternGear

@@ -8,9 +8,9 @@
       time: 10800
   startingGear: MercenaryGear
   canBeAntag: true
-  icon: "JobIconMercenary" 
+  icon: "JobIconMercenary"
   supervisors: job-supervisors-captain
-  setPreference: true
+  setPreference: false
   access:
   - Maintenance
   - External

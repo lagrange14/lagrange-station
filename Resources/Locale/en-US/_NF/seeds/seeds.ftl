@@ -1,5 +1,5 @@
 # Seeds
-seeds-spesos-name = spesos
-seeds-spesos-display-name = spesos
+seeds-spesos-name = credits
+seeds-spesos-display-name = credits
 seeds-pear-name = pear
 seeds-pear-display-name = pear

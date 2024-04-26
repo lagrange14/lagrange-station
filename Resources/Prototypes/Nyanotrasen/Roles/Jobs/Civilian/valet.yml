@@ -17,7 +17,7 @@
   - Cargo
   - Maintenance
   - Janitor
-  - External # Frontier
+#  - External # Frontier
   - Mail # Frontier
 
 - type: startingGear

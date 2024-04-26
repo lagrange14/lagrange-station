@@ -14,7 +14,7 @@
   - Lawyer
   - Brig
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: LawyerGear

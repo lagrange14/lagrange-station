@@ -14,7 +14,7 @@
   - Cargo
   - Maintenance
   - Service
-  - External # Frontier
+#  - External # Frontier
   - Mail # Frontier
 
 - type: startingGear
@@ -27,7 +27,7 @@
     outerClothing: ClothingOuterWinterCoatMail
     eyes: ClothingEyesHudMail
     id: MailCarrierPDA
-    ears: ClothingHeadsetService # Frontier - ClothingHeadsetCargo<ClothingHeadsetService
+    ears: ClothingHeadsetCargo
     belt: MailBag
   innerClothingSkirt: ClothingUniformJumpskirtMailCarrier
   satchel: ClothingBackpackSatchelFilled

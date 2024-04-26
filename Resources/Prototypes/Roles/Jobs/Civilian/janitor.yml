@@ -14,7 +14,7 @@
   - Service
   - Janitor
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay

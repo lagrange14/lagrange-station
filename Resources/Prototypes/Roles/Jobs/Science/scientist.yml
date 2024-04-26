@@ -12,7 +12,7 @@
   access:
   - Research
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: ScientistGear

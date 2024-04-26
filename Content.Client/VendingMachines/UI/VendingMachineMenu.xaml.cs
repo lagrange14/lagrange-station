@@ -157,7 +157,7 @@ namespace Content.Client.VendingMachines.UI
                 }
                 // This block exists to allow the VendPrice flag to set a vending machine item price.
 
-                vendingItem.Text = $"[${cost}] {itemName} [{entry.Amount}]";
+                vendingItem.Text = $"{itemName} [{entry.Amount}]";
                 vendingItem.Icon = icon;
                 filteredInventory.Add(i);
             }

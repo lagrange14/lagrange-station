@@ -12,7 +12,7 @@
   alwaysUseSpawner: true
   icon: "JobIconHeadOfPersonnel"
   requireAdminNotify: true
-  supervisors: job-supervisors-centcom 
+  supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -22,6 +22,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  setPreference: false
 
 - type: startingGear
   id: SrGear

@@ -13,14 +13,14 @@
   - Service
   - Maintenance
   - Kitchen
-  - External # Frontier
+#  - External # Frontier
   extendedAccess:
   - Hydroponics
   - Bar #Nyano - Summary: After this line, Professional Che is a component to be added. Very important.
-  special: 
+  special:
   - !type:AddComponentSpecial
     components:
-    - type: ProfessionalChef #Nyano - End Summary. 
+    - type: ProfessionalChef #Nyano - End Summary.
 
 - type: startingGear
   id: ChefGear
