@@ -2,7 +2,7 @@
 
 ## General stuff
 ui-info-title = Information
-ui-info-tab-rules = Server Rules
+ui-info-tab-rules = Guidelines
 ui-info-tab-tutorial = Tutorial
 
 ## Tutorial tab
