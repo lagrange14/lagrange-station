@@ -1,0 +1,181 @@
+﻿- type: decal
+  id: CastorSign1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/castorsign.rsi
+    state: castorsign1
+
+- type: decal
+  id: CastorSign2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/castorsign.rsi
+    state: castorsign2
+
+- type: decal
+  id: CastorSign3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/castorsign.rsi
+    state: castorsign3
+
+- type: decal
+  id: CastorSign4
+  tags: ["station"]
+  sprite:
+    sprite: Decals/castorsign.rsi
+    state: castorsign4
+
+- type: decal
+  id: PolluxSign1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/polluxsign.rsi
+    state: polluxsign1
+
+- type: decal
+  id: PolluxSign2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/polluxsign.rsi
+    state: polluxsign2
+
+- type: decal
+  id: PolluxSign3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/polluxsign.rsi
+    state: polluxsign3
+
+- type: decal
+  id: PolluxSign4
+  tags: ["station"]
+  sprite:
+    sprite: Decals/polluxsign.rsi
+    state: polluxsign4
+
+- type: decal
+  id: LagrangeSign1-1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign1
+
+- type: decal
+  id: LagrangeSign1-2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign2
+
+- type: decal
+  id: LagrangeSign2-1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign3
+
+- type: decal
+  id: LagrangeSign2-2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign4
+
+- type: decal
+  id: LagrangeSign2-3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign5
+
+- type: decal
+  id: LagrangeSign3-1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign6
+
+- type: decal
+  id: LagrangeSign3-2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign7
+
+- type: decal
+  id: LagrangeSign3-3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign8
+
+- type: decal
+  id: LagrangeSign3-4
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign9
+
+- type: decal
+  id: LagrangeSign3-5
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign10
+
+- type: decal
+  id: LagrangeSign4-1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign11
+
+- type: decal
+  id: LagrangeSign4-2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign12
+
+- type: decal
+  id: LagrangeSign4-3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign13
+
+- type: decal
+  id: LagrangeSign4-4
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign14
+
+- type: decal
+  id: LagrangeSign5-1
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign15
+
+- type: decal
+  id: LagrangeSign5-2
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign16
+
+- type: decal
+  id: LagrangeSign5-3
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign17
+
+- type: decal
+  id: LagrangeSign5-4
+  tags: ["station"]
+  sprite:
+    sprite: Decals/lagrangesign.rsi
+    state: lagrangesign18

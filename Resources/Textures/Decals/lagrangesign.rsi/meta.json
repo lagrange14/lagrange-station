@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Lagrange Station — makyo (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+        "name": "lagrangesign1"
+    },
+    {
+        "name": "lagrangesign2"
+    },
+    {
+        "name": "lagrangesign3"
+    },
+    {
+        "name": "lagrangesign4"
+    },
+    {
+        "name": "lagrangesign5"
+    },
+    {
+        "name": "lagrangesign6"
+    },
+    {
+        "name": "lagrangesign7"
+    },
+    {
+        "name": "lagrangesign8"
+    },
+    {
+        "name": "lagrangesign9"
+    },
+    {
+        "name": "lagrangesign10"
+    },
+    {
+        "name": "lagrangesign11"
+    },
+    {
+        "name": "lagrangesign12"
+    },
+    {
+        "name": "lagrangesign13"
+    },
+    {
+        "name": "lagrangesign14"
+    },
+    {
+        "name": "lagrangesign15"
+    },
+    {
+        "name": "lagrangesign16"
+    },
+    {
+        "name": "lagrangesign17"
+    },
+    {
+        "name": "lagrangesign18"
+    }
+  ]
+}
