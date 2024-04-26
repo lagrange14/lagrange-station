@@ -29,10 +29,11 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  access:
-  - Captain # Just making sure in the case of any error that this role cannot be used for any bad doing.
-  - Maintenance # Frontier
-  - External # Frontier
+  # Lagrange
+  # access:
+  # - Captain # Just making sure in the case of any error that this role cannot be used for any bad doing.
+  # - Maintenance # Frontier
+  # - External # Frontier
   accessGroups:
   - AllAccess
   special:
