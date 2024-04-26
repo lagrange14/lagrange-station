@@ -54,7 +54,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         SubscribeLocalEvent<RoundStartingEvent>(OnStartup);
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawningEvent);
-        SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndTextEvent);
+        // SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndTextEvent); # Lagrange
     }
 
     private void OnRoundEndTextEvent(RoundEndTextAppendEvent ev)
