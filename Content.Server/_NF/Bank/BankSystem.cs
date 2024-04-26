@@ -64,6 +64,7 @@ public sealed partial class BankSystem : EntitySystem
             profile.Name,
             profile.FlavorText,
             profile.Species,
+            profile.Height,
             profile.Age,
             profile.Sex,
             profile.Gender,
