@@ -12,7 +12,7 @@
   access:
   - Theatre
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
   special:
   - !type:AddComponentSpecial
     components:

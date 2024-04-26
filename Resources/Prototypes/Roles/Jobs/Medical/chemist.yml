@@ -13,7 +13,7 @@
   - Medical
   - Chemistry
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: ChemistGear
