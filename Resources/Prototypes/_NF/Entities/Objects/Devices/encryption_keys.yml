@@ -23,8 +23,8 @@
   suffix: DO NOT MAP
   description: An encryption key for the new frontier security department channel.
   components:
-  - type: EncryptionKey
-    channels:
+#  - type: EncryptionKey
+#    channels:
 #    - NFSD
 #    defaultChannel: NFSD
   - type: Item

@@ -41,7 +41,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
-      - id: FrontierUplinkCoin5
+#      - id: FrontierUplinkCoin5
 
 - type: entity
   noSpawn: true
@@ -53,7 +53,7 @@
       - id: BoxSurvival
       - id: ForensicPad
       - id: ForensicScanner
-      - id: FrontierUplinkCoin5
+#      - id: FrontierUplinkCoin5
 
 - type: entity
   noSpawn: true
@@ -64,7 +64,7 @@
     contents:
       - id: BoxSurvivalBrigmedic
       - id: Flash
-      - id: FrontierUplinkCoin5
+#      - id: FrontierUplinkCoin5
 
 - type: entity
   noSpawn: true
