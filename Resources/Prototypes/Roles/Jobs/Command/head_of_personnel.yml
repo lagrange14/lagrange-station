@@ -55,7 +55,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  setPreference: false # Frontier
+  setPreference: true
 
 - type: startingGear
   id: HoPGear
