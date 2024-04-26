@@ -42,7 +42,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Cryogenics",
         "Engineering",
         "External",
-        "Frontier", // Frontier
+        // "Frontier", // Frontier
         "HeadOfPersonnel",
         "HeadOfSecurity",
         "Hydroponics",
@@ -52,7 +52,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Mail", // Frontier
         "Maintenance",
         "Medical",
-        "Mercenary", // Frontier
+        // "Mercenary", // Frontier
         "Pilot", // Frontier
         "Quartermaster",
         "Research",
