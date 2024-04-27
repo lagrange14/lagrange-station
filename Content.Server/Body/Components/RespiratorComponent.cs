@@ -72,8 +72,10 @@ namespace Content.Server.Body.Components
 
         [DataField("CPRSound")]
         public SoundSpecifier CPRSound { get; set; } = new SoundPathSpecifier("/Audio/Effects/CPR.ogg");
+        [DataField("CPRWeakSound")]
+        public SoundSpecifier CPRWeakSound { get; set; } = new SoundPathSpecifier("/Audio/Effects/CPR_weak.ogg");
 
-        public bool IsReceivingCPR = false;
+        public EntityUid? CPRPlayingStream;
     }
 }
 

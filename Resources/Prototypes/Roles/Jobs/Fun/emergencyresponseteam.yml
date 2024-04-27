@@ -206,6 +206,10 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: MedicalTraining
 
 - type: startingGear
   id: ERTMedicalGear

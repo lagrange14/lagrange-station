@@ -24,6 +24,8 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
+    components:
+    - type: MedicalTraining
 
 - type: startingGear
   id: BrigmedicGear

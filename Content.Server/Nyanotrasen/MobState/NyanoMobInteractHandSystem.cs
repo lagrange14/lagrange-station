@@ -38,12 +38,12 @@ namespace Content.Server.Mobs
             // Highest to lowest prio:
 
             // 1. Are we in crit and suffocating?
-            // if (component.CurrentState == Shared.Mobs.MobState.Critical && TryComp<RespiratorComponent>(uid, out var respirator))
-            // {
-            //     _respirator.AttemptCPR(uid, respirator, args.User);
-            //     args.Handled = true;
-            //     return;
-            // }
+            if (component.CurrentState == Shared.Mobs.MobState.Critical && TryComp<RespiratorComponent>(uid, out var respirator))
+            {
+                _respirator.AttemptCPR(uid, respirator, args);
+                args.Handled = true;
+                return;
+            }
 
             // 2. Are we sleeping?
             if (TryComp<SleepingComponent>(uid, out var sleeping))
