@@ -1,13 +1,16 @@
 using Content.Shared.DrawDepth;
+using Content.Shared.Mobs;
 using Content.Shared.SubFloor;
 using Robust.Client.GameObjects;
+using Robust.Client.UserInterface;
+using Content.Client.Ghost;
 
 namespace Content.Client.SubFloor;
 
 public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-
+    [UISystemDependency] private readonly Ghost.GhostSystem? _ghost = default;
     private bool _showAll;
 
     [ViewVariables(VVAccess.ReadWrite)]
@@ -74,6 +77,12 @@ public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
         {
             args.Sprite.DrawDepth = component.OriginalDrawDepth.Value;
             component.OriginalDrawDepth = null;
+        }
+
+        // If we are showing all (as we will be while mapping), draw the sprites above everything.
+        if (ShowAll)
+        {
+            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.Overdoors + 1;
         }
     }
 
