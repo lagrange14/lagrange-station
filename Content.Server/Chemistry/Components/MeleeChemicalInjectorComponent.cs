@@ -19,7 +19,7 @@ namespace Content.Server.Chemistry.Components
         /// Whether this will inject through hardsuits or not.
         /// </summary>
         [DataField("pierceArmor"), ViewVariables(VVAccess.ReadWrite)]
-        public bool PierceArmor = true;
+        public bool PierceArmor = false;
 
         /// <summary>
         ///     Solution to inject from.

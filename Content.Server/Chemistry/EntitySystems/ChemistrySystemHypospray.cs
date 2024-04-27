@@ -10,7 +10,9 @@ using Content.Shared.Forensics;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
+using Content.Shared.Inventory;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Tag;
 using Content.Shared.Timing;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.GameStates;
@@ -22,6 +24,9 @@ namespace Content.Server.Chemistry.EntitySystems
     public sealed partial class ChemistrySystem
     {
         [Dependency] private readonly UseDelaySystem _useDelay = default!;
+        [Dependency] private readonly TagSystem _tag = default!;
+
+        [Dependency] private readonly InventorySystem _inventory = default!;
 
         private void InitializeHypospray()
         {
@@ -74,6 +79,9 @@ namespace Content.Server.Chemistry.EntitySystems
 
         public bool TryDoInject(Entity<HyposprayComponent> hypo, EntityUid? target, EntityUid user)
         {
+            if (target is null)
+                return false;
+
             var (uid, component) = hypo;
 
             if (!EligibleEntity(target, _entMan, component))
@@ -85,8 +93,16 @@ namespace Content.Server.Chemistry.EntitySystems
                     return false;
             }
 
-
             string? msgFormat = null;
+
+            if (!hypo.Comp.PierceArmor && _inventory.TryGetSlotEntity(target.Value, "outerClothing", out var suit) && _tag.HasTag(suit.Value, "Hardsuit"))
+            {
+                if (target == null) return false;
+                var taget = (EntityUid) target;
+
+                _popup.PopupCursor(Loc.GetString("hypospray-cant-hardsuit"), user);
+                return false;
+            }
 
             if (target == user)
                 msgFormat = "hypospray-component-inject-self-message";
