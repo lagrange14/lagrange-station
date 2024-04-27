@@ -27,6 +27,7 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
+  setPreference: false
 
 - type: startingGear
   id: SeniorOfficerGear

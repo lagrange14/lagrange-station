@@ -95,8 +95,8 @@
     powerLoad: 200
     priority: Low
   - type: Actions
-  - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-mechanical
+  # - type: SentienceTarget # Lagrange
+  #   flavorKind: station-event-random-sentience-flavor-mechanical # Lagrange
   - type: StaticPrice
     price: 1000
   - type: Appearance
@@ -133,8 +133,8 @@
 #        layer: # Frontier
 #        - MachineLayer # Frontier
         density: 190
-  - type: Advertise
-    pack: CondimentVendAds
+#   - type: Advertise # Lagrange
+#    pack: CondimentVendAds # Lagrange
   - type: Speech
   - type: Transform
     noRot: false
@@ -150,8 +150,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: AmmoVendAds
+#   - type: Advertise # Lagrange
+#    pack: AmmoVendAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/ammo.rsi
@@ -179,8 +179,8 @@
     normalState: normal-unshaded
     denyState: deny-unshaded
     loopDeny: false
-  - type: Advertise
-    pack: BoozeOMatAds
+#   - type: Advertise # Lagrange
+#    pack: BoozeOMatAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/boozeomat.rsi
@@ -242,8 +242,8 @@
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
-  - type: Advertise
-    pack: ChefvendAds
+#   - type: Advertise # Lagrange
+#    pack: ChefvendAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chefvend.rsi
     layers:
@@ -276,8 +276,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: CigaretteMachineAds
+#   - type: Advertise # Lagrange
+#    pack: CigaretteMachineAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cigs.rsi
@@ -302,8 +302,8 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: ClothesMateAds
+#   - type: Advertise # Lagrange
+#    pack: ClothesMateAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/clothing.rsi
@@ -332,8 +332,8 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: ClothesMateAds
+#   - type: Advertise # Lagrange
+#    pack: ClothesMateAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/winterdrobe.rsi
@@ -368,8 +368,8 @@
     screenState: screen
     ejectDelay: 5
     soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
-  - type: Advertise
-    pack: HotDrinksMachineAds
+#   - type: Advertise # Lagrange
+#    pack: HotDrinksMachineAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/coffee.rsi
@@ -405,8 +405,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     ejectDelay: 1.9
-  - type: Advertise
-    pack: RobustSoftdrinksAds
+#   - type: Advertise # Lagrange
+#    pack: RobustSoftdrinksAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cola.rsi
@@ -548,8 +548,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     ejectDelay: 1.9
-  - type: Advertise
-    pack: RobustSoftdrinksAds
+#   - type: Advertise # Lagrange
+#    pack: RobustSoftdrinksAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/shamblersjuice.rsi
@@ -582,8 +582,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     ejectDelay: 1.9
-  - type: Advertise
-    pack: RobustSoftdrinksAds
+#   - type: Advertise # Lagrange
+#    pack: RobustSoftdrinksAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/pwrgame.rsi
@@ -616,8 +616,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     ejectDelay: 1.9
-  - type: Advertise
-    pack: RobustSoftdrinksAds
+#   - type: Advertise # Lagrange
+#    pack: RobustSoftdrinksAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/gib.rsi
@@ -646,8 +646,8 @@
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
-  - type: Advertise
-    pack: DinnerwareAds
+#   - type: Advertise # Lagrange
+#    pack: DinnerwareAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/dinnerware.rsi
     layers:
@@ -676,8 +676,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: MagiVendAds
+#   - type: Advertise # Lagrange
+#    pack: MagiVendAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/magivend.rsi
     layers:
@@ -706,8 +706,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: DiscountDansAds
+#   - type: Advertise # Lagrange
+#    pack: DiscountDansAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/discount.rsi
@@ -768,8 +768,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     ejectDelay: 0.6
-  - type: Advertise
-    pack: NanoMedAds
+#   - type: Advertise # Lagrange
+#    pack: NanoMedAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/medical.rsi
     layers:
@@ -803,8 +803,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: NutriMaxAds
+#   - type: Advertise # Lagrange
+#    pack: NutriMaxAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/nutri.rsi
     layers:
@@ -835,8 +835,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: SecTechAds
+#   - type: Advertise # Lagrange
+#    pack: SecTechAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/sec.rsi
     layers:
@@ -873,8 +873,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: MegaSeedAds
+#   - type: Advertise # Lagrange
+#    pack: MegaSeedAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/seeds.rsi
     layers:
@@ -915,8 +915,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: GetmoreChocolateCorpAds
+#   - type: Advertise # Lagrange
+#    pack: GetmoreChocolateCorpAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/snack.rsi
@@ -1058,8 +1058,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: BodaAds
+#   - type: Advertise # Lagrange
+#    pack: BodaAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/sovietsoda.rsi
@@ -1092,8 +1092,8 @@
     ejectState: eject-unshaded
     denyState: deny-unshaded
     screenState: screen
-  - type: Advertise
-    pack: AutoDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: AutoDrobeAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/theater.rsi
@@ -1126,8 +1126,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: VendomatAds
+#   - type: Advertise # Lagrange
+#    pack: VendomatAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/vendomat.rsi
@@ -1157,8 +1157,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: VendomatAds
+#   - type: Advertise # Lagrange
+#    pack: VendomatAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/robotics.rsi
@@ -1221,8 +1221,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     ejectDelay: 1.8
-  - type: Advertise
-    pack: GoodCleanFunAds
+#   - type: Advertise # Lagrange
+#    pack: GoodCleanFunAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/games.rsi
     layers:
@@ -1251,8 +1251,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: ChangAds
+#   - type: Advertise # Lagrange
+#    pack: ChangAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/changs.rsi
@@ -1314,8 +1314,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: DonutAds
+#   - type: Advertise # Lagrange
+#    pack: DonutAds # Lagrange
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/donut.rsi
@@ -1391,8 +1391,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: HyDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: HyDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/hydrobe.rsi
     layers:
@@ -1415,8 +1415,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: LawDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: LawDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/lawdrobe.rsi
     layers:
@@ -1439,8 +1439,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: SecDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: SecDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/secdrobe.rsi
     layers:
@@ -1465,8 +1465,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: BarDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: BarDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/bardrobe.rsi
     layers:
@@ -1515,8 +1515,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: CargoDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: CargoDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cargodrobe.rsi
     layers:
@@ -1539,8 +1539,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: MediDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: MediDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/medidrobe.rsi
     layers:
@@ -1563,8 +1563,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: ChemDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: ChemDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chemdrobe.rsi
     layers:
@@ -1587,8 +1587,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: CuraDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: CuraDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/curadrobe.rsi
     layers:
@@ -1613,8 +1613,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: AtmosDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: AtmosDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/atmosdrobe.rsi
     layers:
@@ -1637,8 +1637,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: EngiDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: EngiDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/engidrobe.rsi
     layers:
@@ -1661,8 +1661,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: ChefDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: ChefDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chefdrobe.rsi
     layers:
@@ -1685,8 +1685,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: DetDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: DetDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/detdrobe.rsi
     layers:
@@ -1709,8 +1709,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: JaniDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: JaniDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/janidrobe.rsi
     layers:
@@ -1733,8 +1733,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: SciDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: SciDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/scidrobe.rsi
     layers:
@@ -1757,8 +1757,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: SyndieDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: SyndieDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/syndiedrobe.rsi
     layers:
@@ -1783,8 +1783,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: RoboDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: RoboDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/robodrobe.rsi
     layers:
@@ -1807,8 +1807,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: GeneDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: GeneDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/genedrobe.rsi
     layers:
@@ -1831,8 +1831,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: ViroDrobeAds
+#   - type: Advertise # Lagrange
+#    pack: ViroDrobeAds # Lagrange
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/virodrobe.rsi
     layers:
@@ -1902,8 +1902,8 @@
     radius: 1.5
     energy: 1.6
     color: "#3c5eb5"
-  - type: Advertise
-    pack: HappyHonkAds
+#   - type: Advertise # Lagrange
+#    pack: HappyHonkAds # Lagrange
   - type: MarketModifier
     mod: 5
 

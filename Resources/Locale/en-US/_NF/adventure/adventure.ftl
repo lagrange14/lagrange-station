@@ -7,7 +7,7 @@ adventure-list-high = Today's Top Earners:
 adventure-list-low = Today's Biggest Spenders:
 adventure-title = New Frontier Adventure Mode
 adventure-description = Join a ship crew or buy your own and explore, research, salvage, or haul your way to riches!
-currency = Spesos
+currency = Credits
 
 guide-entry-adventure = New Frontiers Program
 guide-entry-bank = NT Galactic Bank

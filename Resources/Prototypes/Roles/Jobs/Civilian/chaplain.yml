@@ -12,7 +12,7 @@
   access:
   - Chapel
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
   special:
   - !type:AddComponentSpecial
     components:

@@ -13,7 +13,7 @@
   - Service
   - Maintenance
   - Hydroponics
-  - External # Frontier
+#  - External # Frontier
   extendedAccess:
   - Kitchen
   - Bar

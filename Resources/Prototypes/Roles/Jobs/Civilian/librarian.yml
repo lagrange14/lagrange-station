@@ -12,7 +12,7 @@
   access:
   - Service
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: LibrarianGear

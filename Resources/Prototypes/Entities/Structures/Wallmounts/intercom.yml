@@ -150,7 +150,7 @@
 - type: entity
   id: IntercomCommand
   parent: Intercom
-  suffix: Command, DO NOT MAP # Frontier - Added DO NOT MAP
+#  suffix: Command, DO NOT MAP # Frontier - Added DO NOT MAP
   components:
   - type: Intercom
     supportedChannels:
@@ -194,7 +194,7 @@
 - type: entity
   id: IntercomSecurity
   parent: Intercom
-  suffix: Security # Frontier - Not adding DO NOT MAP. (Prototype is already matched by "Security" for sec shipyard.)
+#  suffix: Security # Frontier - Not adding DO NOT MAP. (Prototype is already matched by "Security" for sec shipyard.)
   components:
   - type: Intercom
     supportedChannels:
@@ -227,7 +227,7 @@
 - type: entity
   id: IntercomAll
   parent: Intercom
-  suffix: All, DO NOT MAP # Frontier - Added DO NOT MAP
+#  suffix: All, DO NOT MAP # Frontier - Added DO NOT MAP
   components:
   - type: Intercom
     supportedChannels:
@@ -237,7 +237,7 @@
     - Medical
     - Science
     - Security
-    - NFSD #Frontier - Add NFSD channel
+#    - NFSD #Frontier - Add NFSD channel
     - Service
     - Supply
     - Traffic # Frontier - Add Traffic channel

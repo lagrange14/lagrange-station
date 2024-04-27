@@ -29,6 +29,7 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ] # Frontier
+  setPreference: false
 
 - type: startingGear
   id: BailiffGear

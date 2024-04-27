@@ -180,7 +180,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
                 newAccess.Add($"Brig");
             }
 
-            _accessSystem.TrySetTags(targetId, newAccess, newCap);
+            // Lagrange
+            // _accessSystem.TrySetTags(targetId, newAccess, newCap);
         }
 
         var deedID = EnsureComp<ShuttleDeedComponent>(targetId);
@@ -191,10 +192,11 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         var channel = component.ShipyardChannel;
 
-        if (ShipyardConsoleUiKey.Security != (ShipyardConsoleUiKey) args.UiKey)
-            _idSystem.TryChangeJobTitle(targetId, $"Captain", idCard, player);
-        else
-            channel = component.SecurityShipyardChannel;
+        // Lagrange
+        // if (ShipyardConsoleUiKey.Security != (ShipyardConsoleUiKey) args.UiKey)
+        //     _idSystem.TryChangeJobTitle(targetId, $"Captain", idCard, player);
+        // else
+        //     channel = component.SecurityShipyardChannel;
 
         // The following block of code is entirely to do with trying to sanely handle moving records from station to station.
         // it is ass.

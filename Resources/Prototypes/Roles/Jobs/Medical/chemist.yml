@@ -13,7 +13,7 @@
   - Medical
   - Chemistry
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
   special:
   - !type:AddComponentSpecial
     components:

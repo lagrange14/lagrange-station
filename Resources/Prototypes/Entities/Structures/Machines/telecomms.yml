@@ -70,7 +70,7 @@
 - type: entity
   parent: TelecomServer
   id: TelecomServerFilled
-  suffix: Filled, DO NOT MAP # Frontier - Added DO NOT MAP
+  # suffix: Filled, DO NOT MAP # Frontier - Added DO NOT MAP
   components:
   - type: ContainerFill
     containers:
@@ -81,7 +81,7 @@
       - EncryptionKeyMedical
       - EncryptionKeyScience
       - EncryptionKeySecurity
-      - EncryptionKeyNFSD
+#      - EncryptionKeyNFSD
       - EncryptionKeyService
       - EncryptionKeyCommand
       - EncryptionKeyTraffic # Frontier - Add Traffic channel

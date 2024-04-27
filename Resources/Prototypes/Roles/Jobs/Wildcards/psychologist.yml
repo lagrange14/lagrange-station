@@ -12,7 +12,7 @@
   access:
   - Medical
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
   extendedAccess:
   - Chemistry
   special:

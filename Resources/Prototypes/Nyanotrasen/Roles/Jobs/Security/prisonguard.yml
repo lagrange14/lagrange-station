@@ -18,9 +18,9 @@
   - Brig
   - Maintenance
   - Service # Frontier
-  - External # Frontier
+#  - External # Frontier
   - Mercenary # Frontier
-  - Captain # Frontier
+#  - Captain # Frontier
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]

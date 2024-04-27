@@ -18,7 +18,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyNFSD
+#      - EncryptionKeyNFSD
       - EncryptionKeyCommon
   - type: Sprite
     sprite: _NF/Clothing/Ears/Headsets/nfsd_e_green.rsi
@@ -57,7 +57,7 @@
     sprite: _NF/Clothing/Ears/Headsets/nfsd_e_cb.rsi
   - type: Clothing
     sprite: _NF/Clothing/Ears/Headsets/nfsd_e_cb.rsi
-  
+
 - type: entity
   parent: ClothingHeadsetSecuritySafe
   id: ClothingHeadsetNFSDgreenSafe # Ask SR or Sheriff for keys

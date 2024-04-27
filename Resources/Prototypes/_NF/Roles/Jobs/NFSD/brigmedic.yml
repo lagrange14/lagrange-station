@@ -26,6 +26,7 @@
     implants: [ MindShieldImplant, TrackingImplant ]
     components:
     - type: MedicalTraining
+  setPreference: false
 
 - type: startingGear
   id: BrigmedicGear

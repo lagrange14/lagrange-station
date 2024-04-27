@@ -690,6 +690,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("bank_balance");
 
+                    b.Property<byte[]>("CDCharacterRecords")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("cd_character_records");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -734,6 +738,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("hair_name");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("REAL")
+                        .HasColumnName("height");
 
                     b.Property<byte[]>("Markings")
                         .HasColumnType("jsonb")

@@ -8,7 +8,7 @@
   supervisors: job-supervisors-everyone
   access:
   - Maintenance
-  - External # Frontier
+#  - External # Frontier
 
 - type: startingGear
   id: PassengerGear

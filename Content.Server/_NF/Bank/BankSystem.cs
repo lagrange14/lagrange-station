@@ -64,6 +64,7 @@ public sealed partial class BankSystem : EntitySystem
             profile.Name,
             profile.FlavorText,
             profile.Species,
+            profile.Height,
             profile.Age,
             profile.Sex,
             profile.Gender,
@@ -75,7 +76,8 @@ public sealed partial class BankSystem : EntitySystem
             profile.JobPriorities,
             profile.PreferenceUnavailable,
             profile.AntagPreferences,
-            profile.TraitPreferences);
+            profile.TraitPreferences,
+            profile.CDCharacterRecords);
 
         args.State = new BankAccountComponentState
         {

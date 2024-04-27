@@ -54,7 +54,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         SubscribeLocalEvent<RoundStartingEvent>(OnStartup);
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawningEvent);
-        SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndTextEvent);
+        // SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEndTextEvent); # Lagrange
     }
 
     private void OnRoundEndTextEvent(RoundEndTextAppendEvent ev)
@@ -110,6 +110,8 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
     private void OnStartup(RoundStartingEvent ev)
     {
+
+        /* Lagrange
         var depotMap = "/Maps/_NF/POI/cargodepot.yml";
         var tinnia = "/Maps/_NF/POI/tinnia.yml";
         var caseys = "/Maps/_NF/POI/caseyscasino.yml";
@@ -151,22 +153,23 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             _shuttle.SetIFFColor(depotUid3s[0], depotColor);
         }
 
-        if (_map.TryLoad(mapId, nfsdStation, out var nfsdUids, new MapLoadOptions
-            {
-                Offset = _random.NextVector2(500f, 700f)
-            }))
-        {
-            // We should figure out if it is possible to add this grid to the latejoin listing.
-            // Hey turns out we can! (This is kinda copypasted from the lodge with some values filled in.)
-            if (_prototypeManager.TryIndex<GameMapPrototype>("nfsd", out var stationProto))
-            {
-                _station.InitializeNewStation(stationProto.Stations["nfsd"], nfsdUids);
-            }
+        // Lagrange
+        // if (_map.TryLoad(mapId, nfsdStation, out var nfsdUids, new MapLoadOptions
+        //     {
+        //         Offset = _random.NextVector2(500f, 700f)
+        //     }))
+        // {
+        //     // We should figure out if it is possible to add this grid to the latejoin listing.
+        //     // Hey turns out we can! (This is kinda copypasted from the lodge with some values filled in.)
+        //     if (_prototypeManager.TryIndex<GameMapPrototype>("nfsd", out var stationProto))
+        //     {
+        //         _station.InitializeNewStation(stationProto.Stations["nfsd"], nfsdUids);
+        //     }
 
-            var meta = EnsureComp<MetaDataComponent>(nfsdUids[0]);
-            _meta.SetEntityName(nfsdUids[0], "NFSD Outpost", meta);
-            _shuttle.SetIFFColor(nfsdUids[0], new Color(1f, 0.2f, 0.2f));
-        }
+        //     var meta = EnsureComp<MetaDataComponent>(nfsdUids[0]);
+        //     _meta.SetEntityName(nfsdUids[0], "NFSD Outpost", meta);
+        //     _shuttle.SetIFFColor(nfsdUids[0], new Color(1f, 0.2f, 0.2f));
+        // }
 
         if (_map.TryLoad(mapId, tinnia, out var depotUid2s, new MapLoadOptions
             {
@@ -313,6 +316,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             //because they are all offset. confirmed good size grid, just need to fix all the offsets.
             _dunGen.GenerateDungeon(dunGen, grids[0], mapGrid, (Vector2i) offset, seed);
         }
+        */
     }
 
     private async Task ReportRound(String message,  int color = 0x77DDE7)

@@ -99,6 +99,19 @@
 
 - type: entity
   parent: BaseComputerCircuitboard
+  id: EmploymentRecordsComputerCircuitboard
+  name: employment records computer board
+  description: A computer printed circuit board for a employment records computer.
+  components:
+    - type: Sprite
+      state: cpu_command
+    - type: ComputerBoard
+      prototype: ComputerEmploymentRecords
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopEmploymentRecords # Frontier
+
+- type: entity
+  parent: BaseComputerCircuitboard
   id: CargoRequestComputerCircuitboard
   name: cargo request computer board
   description: A computer printed circuit board for a cargo request computer.
