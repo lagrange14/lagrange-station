@@ -1,16 +1,12 @@
 using Content.Shared.DrawDepth;
-using Content.Shared.Mobs;
 using Content.Shared.SubFloor;
 using Robust.Client.GameObjects;
-using Robust.Client.UserInterface;
-using Content.Client.Ghost;
 
 namespace Content.Client.SubFloor;
 
 public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [UISystemDependency] private readonly Ghost.GhostSystem? _ghost = default;
     private bool _showAll;
 
     [ViewVariables(VVAccess.ReadWrite)]
