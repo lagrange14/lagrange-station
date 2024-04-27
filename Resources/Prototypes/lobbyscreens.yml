@@ -22,14 +22,34 @@
   # id: Susstation
   # background: /Textures/LobbyScreens/susstation.webp
 
-- type: lobbyBackground
-  id: SkellyVsTheRev
-  background: /Textures/LobbyScreens/skellyvstherev.webp
+# - type: lobbyBackground
+#   id: SkellyVsTheRev
+#   background: /Textures/LobbyScreens/skellyvstherev.webp
+
+# - type: lobbyBackground
+#   id: Doomed
+#   background: /Textures/LobbyScreens/doomed.webp
+
+# - type: lobbyBackground
+#   id: Blueprint
+#   background: /Textures/LobbyScreens/blueprint.webp
 
 - type: lobbyBackground
-  id: Doomed
-  background: /Textures/LobbyScreens/doomed.webp
+  id: FullOfSkunks
+  background: /Textures/LobbyScreens/full-of-skunks.webp
 
 - type: lobbyBackground
-  id: Blueprint
-  background: /Textures/LobbyScreens/blueprint.webp
+  id: Hadje
+  background: /Textures/LobbyScreens/hadje.webp
+
+- type: lobbyBackground
+  id: Monologue
+  background: /Textures/LobbyScreens/monologue.webp
+
+- type: lobbyBackground
+  id: QohelethBack
+  background: /Textures/LobbyScreens/qoheleth-back.webp
+
+- type: lobbyBackground
+  id: Wileling
+  background: /Textures/LobbyScreens/wileling.webp
