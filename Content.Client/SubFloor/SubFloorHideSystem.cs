@@ -69,16 +69,18 @@ public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
             component.OriginalDrawDepth ??= args.Sprite.DrawDepth;
             args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.FloorObjects + 1;
         }
+        else if (ShowAll)
+        {
+            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.Overdoors + 1;
+        }
+        else if (!revealed)
+        {
+            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.BelowFloor;
+        }
         else if (component.OriginalDrawDepth.HasValue)
         {
             args.Sprite.DrawDepth = component.OriginalDrawDepth.Value;
             component.OriginalDrawDepth = null;
-        }
-
-        // If we are showing all (as we will be while mapping), draw the sprites above everything.
-        if (ShowAll)
-        {
-            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.Overdoors + 1;
         }
     }
 
