@@ -179,15 +179,22 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
             _transform.SetCoordinates(mob.Entity.Owner, new EntityCoordinates(mob.MapUid, mob.LocalPosition));
         }
 
-        // TODO Post-event announcement.
+        var str = "";
+
         if (_failedObjectives)
         {
-
+            str = Loc.GetString("station-event-distress-signal-fail-announcement",
+                ("designation", _designation)
+            );
         }
         else
         {
-
+            str = Loc.GetString("station-event-distress-signal-pass-announcement",
+                ("designation", _designation)
+            );
         }
+
+        ChatSystem.DispatchGlobalAnnouncement(str, colorOverride: Color.FromHex("#18abf5"));
     }
 }
 
