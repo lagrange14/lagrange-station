@@ -18,6 +18,7 @@ injector-component-transfer-success-message = You transfer {$amount}u into {$tar
 injector-component-draw-success-message = You draw {$amount}u from {$target}.
 injector-component-target-already-full-message = {$target} is already full!
 injector-component-target-is-empty-message = {$target} is empty!
+injector-component-cannot-hardsuit = The needle cannot penetrate the thick plating!
 
 ## mob-inject doafter messages
 

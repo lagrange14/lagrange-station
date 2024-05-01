@@ -11,8 +11,10 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Forensics;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using Content.Shared.Inventory;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
+using Content.Shared.Tag;
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -20,6 +22,8 @@ public sealed class InjectorSystem : SharedInjectorSystem
 {
     [Dependency] private readonly BloodstreamSystem _blood = default!;
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
+    [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
 
     public override void Initialize()
     {
@@ -31,6 +35,12 @@ public sealed class InjectorSystem : SharedInjectorSystem
 
     private void UseInjector(Entity<InjectorComponent> injector, EntityUid target, EntityUid user)
     {
+        if (_inventory.TryGetSlotEntity(target, "outerClothing", out var suit) && _tag.HasTag(suit.Value, "Hardsuit"))
+        {
+            Popup.PopupCursor(Loc.GetString("injector-component-cannot-hardsuit"), user);
+            return;
+        }
+
         // Handle injecting/drawing for solutions
         if (injector.Comp.ToggleState == InjectorToggleMode.Inject)
         {

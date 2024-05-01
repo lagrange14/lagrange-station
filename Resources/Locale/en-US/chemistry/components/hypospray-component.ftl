@@ -11,3 +11,4 @@ hypospray-component-empty-message = It's empty!
 hypospray-component-feel-prick-message = You feel a tiny prick!
 hypospray-component-transfer-already-full-message = {$owner} is already full!
 hypospray-cant-inject = Can't inject into {$target}!
+hypospray-cant-hardsuit = You cant get the needle to go through the thick plating!

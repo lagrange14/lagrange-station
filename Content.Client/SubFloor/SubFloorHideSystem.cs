@@ -7,7 +7,6 @@ namespace Content.Client.SubFloor;
 public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-
     private bool _showAll;
 
     [ViewVariables(VVAccess.ReadWrite)]
@@ -69,6 +68,14 @@ public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
         {
             component.OriginalDrawDepth ??= args.Sprite.DrawDepth;
             args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.FloorObjects + 1;
+        }
+        else if (ShowAll)
+        {
+            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.Overdoors + 1;
+        }
+        else if (!revealed)
+        {
+            args.Sprite.DrawDepth = (int) Shared.DrawDepth.DrawDepth.BelowFloor;
         }
         else if (component.OriginalDrawDepth.HasValue)
         {
