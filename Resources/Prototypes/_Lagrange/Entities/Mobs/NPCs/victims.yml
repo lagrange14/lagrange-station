@@ -1,0 +1,30 @@
+- type: randomHumanoidSettings
+  id: DistressInjured
+  components:
+  - type: Loadout
+    prototypes:
+    - PassengerGear
+    - PilotGear
+    - TechnicalAssistantGear
+    - CargoTechGear
+    - SalvageSpecialistGear
+    - MedicalInternGear
+    - ResearchAssistantGear
+    - SecurityCadetGear
+  - type: DistressSignalInjured
+  - type: Damageable
+    damage:
+      types:
+        Asphyxiation: 50
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: RandomHumanoidSpawnerDistressInjured
+  name: Distress Signal Victim
+  suffix: Injured
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+  - type: RandomHumanoidSpawner
+    settings: DistressInjured

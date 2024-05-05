@@ -1,0 +1,16 @@
+# Author Info
+# Fireheart& (https://github.com/samsterious)
+
+- type: gameMap
+  id: InjuredSimple
+  mapName: 'Injured Simple'
+  mapPath: /Maps/_Lagrange/DistressSignals/InjuredSimple.yml
+  minPlayers: 0
+  stations:
+    InjuredSimple:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'ID-{0}'
+          nameGenerator:
+            !type:LagrangeNameGenerator

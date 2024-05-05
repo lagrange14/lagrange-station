@@ -1,0 +1,11 @@
+- type: entity
+  id: DistressSignal
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    duration: 900
+    minimumPlayers: 1
+    reoccurrenceDelay: 15
+  - type: DistressSignalRule
+    mapList:
+    - InjuredSimple
