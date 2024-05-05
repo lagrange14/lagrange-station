@@ -21,7 +21,10 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
+    private readonly int _objectiveCompleteDelay = 15;
+
     private List<(Entity<TransformComponent> Entity, EntityUid MapUid, Vector2 LocalPosition)> _playerMobs = new();
+
     protected override void Started(EntityUid uid, DistressSignalRuleComponent component, GameRuleComponent gameRule,
         GameRuleStartedEvent args)
     {
@@ -43,10 +46,18 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
         };
 
         if (!_map.TryLoad(shuttleMap, shuttleProto.MapPath.ToString(), out var gridUids, options))
+        {
+            Log.Error($"Distress signal map '{shuttleMap}' failed to load.");
+            GameTicker.EndGameRule(uid);
             return;
+        }
         component.GridUid = gridUids[0];
         if (component.GridUid is not EntityUid gridUid)
+        {
+            Log.Error($"Distress signal rule component's GridUid was not correctly set.");
+            GameTicker.EndGameRule(uid);
             return;
+        }
         _shuttle.SetIFFColor(gridUid, component.Color);
         var offset = _random.NextVector2(500f, 5000f);
         var mapId = GameTicker.DefaultMap;
@@ -133,7 +144,7 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
 
             // Ensure the objectives *stay* completed.
             component.TimerRunning = true;
-            Timer.Spawn(TimeSpan.FromSeconds(15), () =>
+            Timer.Spawn(TimeSpan.FromSeconds(_objectiveCompleteDelay), () =>
             {
                 component.TimerRunning = false;
                 foreach (var objective in component.Objectives)
