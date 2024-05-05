@@ -66,7 +66,7 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
             ("y", Math.Round(offset.Y))
         );
 
-        ChatSystem.DispatchGlobalAnnouncement(str, colorOverride: Color.FromHex("#18abf5"));
+        ChatSystem.DispatchGlobalAnnouncement(str, sender: "Automated", colorOverride: Color.FromHex("#18abf5"));
 
         // Send the grid to the announced location.
         if (TryComp<ShuttleComponent>(gridUid, out var shuttle))
@@ -204,7 +204,7 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
             );
         }
 
-        ChatSystem.DispatchGlobalAnnouncement(str, colorOverride: Color.FromHex("#18abf5"));
+        ChatSystem.DispatchGlobalAnnouncement(str, sender: "Automated", colorOverride: Color.FromHex("#18abf5"));
     }
 }
 
