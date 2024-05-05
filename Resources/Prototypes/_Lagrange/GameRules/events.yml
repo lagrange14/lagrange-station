@@ -8,4 +8,4 @@
     reoccurrenceDelay: 15
   - type: DistressSignalRule
     mapList:
-      - Borough
+    - InjuredSimple

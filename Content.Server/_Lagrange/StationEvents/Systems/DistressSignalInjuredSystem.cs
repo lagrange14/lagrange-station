@@ -20,8 +20,13 @@ public sealed class DistressSignalInjuredSystem : DistressSignalObjectiveSystem
 
     private void OnVictimCloned(EntityUid uid, DistressSignalInjuredComponent component, CloningEvent ev)
     {
-        // TEST: Ensure this actually works.
-        component.DistressSignalRule.AddObjective(component);
+        if (component.DistressSignalRuleComponent is null)
+        {
+            Log.Error($"Distress signal objective attached to '{uid}', which was cloned without a rule component set.");
+            return;
+        }
+
+        _ruleSystem.AddObjective(component, component.DistressSignalRuleComponent);
     }
 
     public override bool Failed(EntityUid uid)
@@ -34,13 +39,13 @@ public sealed class DistressSignalInjuredSystem : DistressSignalObjectiveSystem
     public override bool Completed(EntityUid uid)
     {
         // The patient must be alive.
-        if (!TryComp<MobStateComponent>(uid, out var mobState) || mobState.CurrentState == MobState.Alive)
+        if (!TryComp<MobStateComponent>(uid, out var mobState) || mobState.CurrentState != MobState.Alive)
         {
             return false;
         }
 
         // The patient must be uninjured.
-        if (!TryComp<DamageableComponent>(uid, out var damage) || damage.Damage.Empty)
+        if (!TryComp<DamageableComponent>(uid, out var damage) || damage.Damage.Any())
         {
             return false;
         }
@@ -49,6 +54,7 @@ public sealed class DistressSignalInjuredSystem : DistressSignalObjectiveSystem
         if (
             !TryComp<TransformComponent>(uid, out var transform) ||
             !TryComp<DistressSignalInjuredComponent>(uid, out var objective) ||
+            objective.DistressSignalRuleComponent is null ||
             transform.GridUid != objective.DistressSignalRuleComponent.GridUid
         )
         {

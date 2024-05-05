@@ -7,13 +7,7 @@ namespace Content.Server.StationEvents.Components;
 public partial class DistressSignalObjectiveComponent : Component
 {
     [DataField("distressSignalRuleComponent")]
-    public DistressSignalRuleComponent DistressSignalRuleComponent = default!;
-
-    [DataField("distressSignalRule")]
-    public DistressSignalRule DistressSignalRule = default!;
-
-    [DataField("gameRuleComponent")]
-    public GameRuleComponent GameRule = default!;
+    public DistressSignalRuleComponent? DistressSignalRuleComponent = default!;
 
     /// <summary>
     /// If true, failure of this objective ends the event immediately.
