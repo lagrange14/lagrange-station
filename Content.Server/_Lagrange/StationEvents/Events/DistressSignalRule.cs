@@ -3,8 +3,7 @@ using Content.Server.Maps;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.StationEvents.Components;
-using Content.Shared.Humanoid;
-using Content.Shared.Mobs.Components;
+using Content.Shared.Mind.Components;
 using Robust.Server.GameObjects;
 using Robust.Server.Maps;
 using Robust.Shared.Map;
@@ -179,12 +178,17 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
             return;
         }
 
-        var mobQuery = AllEntityQuery<HumanoidAppearanceComponent, MobStateComponent, TransformComponent>();
+        var mobQuery = AllEntityQuery<MindContainerComponent, VisitingMindComponent, TransformComponent>();
         _playerMobs.Clear();
 
-        while (mobQuery.MoveNext(out var mobUid, out _, out _, out var xform))
+        while (mobQuery.MoveNext(out var mobUid, out var mind, out var visitingMind, out var xform))
         {
-            if (xform.GridUid == null || xform.MapUid == null || xform.GridUid != gridUid)
+            if (
+                xform.GridUid is null ||
+                xform.MapUid is null ||
+                xform.GridUid != gridUid ||
+                mind.Mind is null && (visitingMind is null || visitingMind.MindId is null)
+            )
                 continue;
 
             // Can't parent directly to map as it runs grid traversal.
