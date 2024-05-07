@@ -100,11 +100,19 @@ public sealed class DistressSignalRule : StationEventSystem<DistressSignalRuleCo
 
         if (component.Objectives.Count == 0)
         {
-            Log.Error($"Distress signal '{component.MapId}' lacks objectives and was thus aborted.");
-            if (component.GridUid is not null)
-                Del(component.GridUid);
-            GameTicker.EndGameRule(uid);
-            return;
+            component.TimerRunning = true;
+            Timer.Spawn(TimeSpan.FromSeconds(1), () =>
+            {
+                component.TimerRunning = false;
+                if (component.Objectives.Count == 0)
+                {
+                    Log.Error($"Distress signal '{component.MapId}' lacks objectives and was thus aborted.");
+                    if (component.GridUid is not null)
+                        Del(component.GridUid);
+                    GameTicker.EndGameRule(uid);
+                    return;
+                }
+            });
         }
 
         // Determine whether a (partially) successful attempt to address the distress signal has been made.
