@@ -248,6 +248,7 @@ public sealed class RespiratorSystem : EntitySystem
         if (!args.Cancelled && TryComp<RespiratorComponent>(args.Target, out var respirator))
         {
             respirator.BreatheInCritCounter += (int)_random.NextFloat(2, 4);
+            args.Repeat = true;
 
             if (!HasComp<MedicalTrainingComponent>(args.User) && TryComp<PhysicsComponent>(args.Target, out var patientPhysics) && TryComp<PhysicsComponent>(args.User, out var perfPhysics))
             {
@@ -265,10 +266,6 @@ public sealed class RespiratorSystem : EntitySystem
 
                     component.CPRPlayingStream = _audio.Stop(component.CPRPlayingStream);
                     args.Repeat = false;
-                }
-                else
-                {
-                    args.Repeat = true;
                 }
             }
         }
@@ -310,7 +307,7 @@ public sealed class RespiratorSystem : EntitySystem
             return true;
         }
 
-        if (args.Handled || !_blocker.CanInteract(args.User, args.Target))
+        if (args.Handled || !_blocker.CanInteract(args.User, args.Target) || !Check())
             return;
 
         bool isTrained = TryComp<MedicalTrainingComponent>(args.User, out _);
