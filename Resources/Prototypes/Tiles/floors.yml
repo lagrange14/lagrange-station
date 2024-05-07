@@ -1503,6 +1503,125 @@
   heatCapacity: 10000
   weather: true
 
+# Non-subfloor Terrain
+
+- type: tile
+  id: FloorAsphaltNonsubfloor
+  name: tiles-non-subfloor-asphalt
+  sprite: /Textures/Tiles/Planet/Concrete/asphalt.png
+  variants: 10
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorGrassNonsubfloor
+  name: tiles-non-subfloor-planet-grass-floor
+  sprite: /Textures/Tiles/grass.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  #canShovel: true # Delta V
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrass
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorGrassJungleNonsubfloor
+  name: tiles-non-subfloor-jungle-grass-floor
+  sprite: /Textures/Tiles/grassjungle.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  #canShovel: true # Delta V
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassJungle
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorGrassDarkNonsubfloor
+  name: tiles-non-subfloor-dark-grass-floor
+  sprite: /Textures/Tiles/grassdark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  #canShovel: true # Delta V
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorGrassLightNonsubfloor
+  name: tiles-non-subfloor-light-grass-floor
+  sprite: /Textures/Tiles/grasslight.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  #canShovel: true # Delta V
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassLight
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorDirtNonsubfloor
+  name: tiles-non-subfloor-dirt-floor
+  sprite: /Textures/Tiles/dirt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  #canShovel: true # Delta V
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true
+
 # Asteroid
 
 - type: tile
@@ -1625,6 +1744,146 @@
   sprite: /Textures/Tiles/Asteroid/ironsand0.png
   baseTurf: Space
   isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+# Non-subfloor Asteroid
+
+- type: tile
+  id: FloorAsteroidSand
+  name: tiles-non-subfloor-asteroid-sand
+  sprite: /Textures/Tiles/Asteroid/asteroid.png
+  variants: 13
+  placementVariants:
+  - 0.8
+  - 0.0166 #Should be roughly 20%.... I think??? I don't know dude, I'm just a YAML monkey.
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0116
+  - 0.0116
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidSandDugNonSubfloor
+  name: tiles-non-subfloor-asteroid-sand
+  sprite: /Textures/Tiles/Asteroid/asteroid_dug.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidSandRedNonSubfloor
+  name: tiles-non-subfloor-asteroid-sand
+  sprite: /Textures/Tiles/Asteroid/asteroid_red.png
+  variants: 13
+  placementVariants:
+  - 0.8
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0116
+  - 0.0116
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidTileNonSubfloor
+  name: tiles-non-subfloor-asteroid-tile
+  sprite: /Textures/Tiles/Asteroid/asteroid_tile.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidIronsandNonSubfloor
+  name: tiles-non-subfloor-asteroid-ironsand
+  sprite: /Textures/Tiles/Asteroid/ironsand.png
+  variants: 15
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidSandUnvariantizedNonSubfloor
+  name: tiles-non-subfloor-asteroid-sand
+  sprite: /Textures/Tiles/Asteroid/asteroid0.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorAsteroidIronsandUnvariantizedNonSubfloor
+  name: tiles-non-subfloor-asteroid-ironsand
+  sprite: /Textures/Tiles/Asteroid/ironsand0.png
+  baseTurf: Plating
+  canCrowbar: true
+  isSubfloor: false # Lagrange
+  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000

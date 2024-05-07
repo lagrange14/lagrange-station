@@ -1,0 +1,11 @@
+tiles-non-subfloor-asphalt = non-subfloor asphalt
+tiles-non-subfloor-planet-grass-floor = non-subfloor grass floor
+tiles-non-subfloor-jungle-grass-floor = non-subfloor jungle grass floor
+tiles-non-subfloor-dark-grass-floor = non-subfloor dark grass floor
+tiles-non-subfloor-light-grass-floor = non-subfloor light grass floor
+tiles-non-subfloor-dirt-floor = non-subfloor dirt floor
+tiles-non-subfloor-asteroid-sand = non-subfloor asteroid sand
+tiles-non-subfloor-asteroid-sand-dug = non-subfloor dug asteroid sand
+tiles-non-subfloor-asteroid-tile = non-subfloor asteroid tile
+tiles-non-subfloor-asteroid-plating = non-subfloor asteroid plating
+tiles-non-subfloor-asteroid-ironsand = non-subfloor asteroid ironsand
